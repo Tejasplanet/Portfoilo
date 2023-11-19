@@ -3,35 +3,28 @@ const myProjects = [
         category: 'Robotics Engineer',
         title: 'Vehicle-based Safety System',
         description: 'When a person drunk then the vechile will not start.....',
-        image: 'assets/robot.jpg',
+        image: 'robot.jpg',
         link: 'pro.html'
     },
     {
         category: 'Web development',
         title: 'Text to speech',
         description: 'It converts text into speech.....',
-        image: 'assets/robot.jpg',
+        image: 'robot.jpg',
         link: 'pro.html'
     },
     {
         category: 'Web development',
         title: 'Text to speech',
         description: 'It converts text into speech.....',
-        image: 'assets/robot.jpg',
+        image: 'robot.jpg',
         link: 'pro.html'
     },
     {
         category: 'Web development',
         title: 'Text to speech',
         description: 'It converts text into speech.....',
-        image: 'assets/robot.jpg',
-        link: 'pro.html'
-    },
-    {
-        category: 'Robotics Engineer',
-        title: 'Vehicle-based Safety System',
-        description: 'When a person drunk then the vechile will not start.....',
-        image: 'assets/robot.jpg',
+        image: 'robot.jpg',
         link: 'pro.html'
     },
     // Add more projects as needed
@@ -114,28 +107,28 @@ updateLoadMoreButtonText();
 
 const workData = [
     {
-        imageSrc: "assets/work 2.jpg",
+        imageSrc: "work robot.jpg",
         title: "Music app",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloribus, sint ex eum illum alias! Quod dicta voluptatem beatae excepturi tempore sint eaque consequatur quaerat ea! Explicabo dolorem voluptatibus itaque.",
         link: "#",
     },
-    {
-        imageSrc: "assets/work 1.jpg",
+   {
+        imageSrc: "work 1.jpg",
         title: "Music app",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloribus, sint ex eum illum alias! Quod dicta voluptatem beatae excepturi tempore sint eaque consequatur quaerat ea! Explicabo dolorem voluptatibus itaque.",
         link: "#",
     },
-    {
-        imageSrc: "assets/work 2.jpg",
+ {
+        imageSrc: "work 2.jpg",
         title: "Music app",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloribus, sint ex eum illum alias! Quod dicta voluptatem beatae excepturi tempore sint eaque consequatur quaerat ea! Explicabo dolorem voluptatibus itaque.",
         link: "#",
     },
-    {
-        imageSrc: "assets/work 3.jpg",
+   {
+        imageSrc: "work 3.jpg",
         title: "Music app",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloribus, sint ex eum illum alias! Quod dicta voluptatem beatae excepturi tempore sint eaque consequatur quaerat ea! Explicabo dolorem voluptatibus itaque.",
