@@ -107,7 +107,7 @@ updateLoadMoreButtonText();
 
 const workData = [
     {
-        imageSrc: "robot.jpg",
+        imageSrc: "work 1.jpg",
         title: "Music app",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloribus, sint ex eum illum alias! Quod dicta voluptatem beatae excepturi tempore sint eaque consequatur quaerat ea! Explicabo dolorem voluptatibus itaque.",
