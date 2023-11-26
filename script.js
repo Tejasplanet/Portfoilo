@@ -2,29 +2,8 @@ const myProjects = [
     {
         category: 'Robotics Engineer',
         title: 'Vehicle-based Safety System',
-        description: 'When a person drunk then the vechile will not start.....',
-        image: 'robot.jpg',
-        link: 'pro.html'
-    },
-    {
-        category: 'Web development',
-        title: 'Text to speech',
-        description: 'It converts text into speech.....',
-        image: 'robot.jpg',
-        link: 'pro.html'
-    },
-    {
-        category: 'Web development',
-        title: 'Text to speech',
-        description: 'It converts text into speech.....',
-        image: 'robot.jpg',
-        link: 'pro.html'
-    },
-    {
-        category: 'Web development',
-        title: 'Text to speech',
-        description: 'It converts text into speech.....',
-        image: 'robot.jpg',
+        description: "Ignition interlock: tests breath for alcohol; prevents car start if levels unsafe, promoting road safety.",
+        image: 'ro.JPG',
         link: 'pro.html'
     },
     // Add more projects as needed
@@ -107,34 +86,26 @@ updateLoadMoreButtonText();
 
 const workData = [
     {
-        imageSrc: "work 1.jpg",
-        title: "Music app",
+        imageSrc: "ro.jpg",
+        title: "Vehicle-based Safety System",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloribus, sint ex eum illum alias! Quod dicta voluptatem beatae excepturi tempore sint eaque consequatur quaerat ea! Explicabo dolorem voluptatibus itaque.",
+            "If someone is drunk and tries to start a car, an ignition interlock system stops the car from working. It makes the driver take a breath test, and if the alcohol level is too high, the car won't start. This helps keep the roads safer by preventing drunk driving.",
+        link: "pro.html",
+    },
+    {
+        imageSrc: "work 1.jpg",
+        title: "Text to Speech",
+        description:
+            "In this website it's converts text into speech",
         link: "#",
     },
-   {
-        imageSrc: "work 1.jpg",
-        title: "Music app",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloribus, sint ex eum illum alias! Quod dicta voluptatem beatae excepturi tempore sint eaque consequatur quaerat ea! Explicabo dolorem voluptatibus itaque.",
-        link: "#",
-    },
- {
+    {
         imageSrc: "work 2.jpg",
         title: "Music app",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloribus, sint ex eum illum alias! Quod dicta voluptatem beatae excepturi tempore sint eaque consequatur quaerat ea! Explicabo dolorem voluptatibus itaque.",
         link: "#",
     },
-   {
-        imageSrc: "work 3.jpg",
-        title: "Music app",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloribus, sint ex eum illum alias! Quod dicta voluptatem beatae excepturi tempore sint eaque consequatur quaerat ea! Explicabo dolorem voluptatibus itaque.",
-        link: "#",
-    },
-    
 ];
 
 const workListContainer = document.querySelector(".work-list");
@@ -278,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 var typed = new Typed("#element", {
-    strings: ["Web developer", "Robotics Engineer", "App developer"],
+    strings: ["Web developer", "App Developer", "Robotics Engineer"],
     typeSpeed: 50,
 });
 // Function to select a tab and add underline
