@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Safety System Showcase</title>
+  <!-- Link to your Tailwind CSS file -->
+  <link rel="stylesheet" href="output.css">
+  <!-- Link to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Edu+TAS+Beginner&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 container mx-auto ">
+
+  <header class="md:py-3.5 md:px-6 z-50 bg-slate-600 md:bg-gray-700 flex items-center justify-between p-4">
+    <!-- Logo and Site Name -->
+    <div class="flex items-center space-x-2">
+      <img src="assets/TS Roboding (13).png" alt="Logo" class="w-8 h-8">
+      <h1 class="text-white text-base font-bold">Ts Roboding</h1>
+    </div>
+    <!-- Navigation Links -->
+    <a href="index.html" class="text-white hover:text-gray-300 transition">Home</a>
+    <!-- Add more navigation links as needed -->
+  </header>
+
+  <!-- Project Showcase Section -->
+  <section class="container mx-auto mt-8 p-4 md:p-8 bg-white rounded shadow-lg">
+
+    <!-- Project Title -->
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center text-purple-600 italic">Vehicle-based Safety System</h2>
+
+    <!-- Project Image -->
+    <h1 class="text-xl font-semibold italic text-blue-500 mb-4">How it looks:-</h1>
+    <img src="assets/ro.JPG" alt="Project Image" class="mb-4 rounded md:h-[500px]" draggable="false">
+    <div class="py-8">
+      <h1 class="text-2xl font-semibold italic text-blue-500">Working Of the project:-</h1>
+      <!-- Project Description -->
+      <p class="text-gray-700 md:text-lg text-justify leading-7 mt-4">
+
+        An Ignition Interlock Device (IID) is a system designed to prevent a vehicle from starting if the driver is
+        under the influence of alcohol. Integrated into the vehicle's ignition system, the IID requires the driver to
+        perform an alcohol detection test, often using a breathalyzer, before starting the vehicle. The system checks
+        the driver's blood alcohol concentration (BAC) against a predetermined threshold, typically set to the legal
+        limit for driving. If the BAC is below the threshold, the vehicle's ignition system is authorized to start. In
+        the case of a failed test, where the BAC exceeds the threshold, the ignition remains locked, and the vehicle
+        will not start. Periodic retests during the journey may also be required to ensure ongoing sobriety. IID
+        implementation contributes to road safety by preventing intoxicated individuals from operating a vehicle. These
+        systems are often mandated for individuals with a history of DUI convictions.
+      </p>
+    </div>
+
+
+    <!-- Code Showcase -->
+    <div class="bg-gray-200 p-4 rounded mt-8 relative">
+      <h3 class="text-xl md:text-2xl font-bold mb-2 text-start md:text-center">Project Code</h3>
+      <button id="copyButton" class="bg-blue-500 text-white px-4 py-2 rounded absolute top-2 right-2">
+        Copy
+      </button>
+      <div id="copyNotification" class="hidden bg-green-500 text-white px-4 py-2 rounded absolute top-2 right-2">
+        Code Copied!
+      </div>
+      <pre class="bg-gray-300 p-4 rounded overflow-x-auto"><code class="language-html">
+        #include <LiquidCrystal.h>
+          LiquidCrystal lcd(14, 15, 16, 17,18,19); 
+          #define Alcohol 9
+          void setup()
+          {
+          pinMode(Alcohol, INPUT);
+          pinMode(10, OUTPUT);
+          lcd.begin(16, 2); lcd.print("Alcohol");
+          lcd.setCursor(0,1);
+          lcd.print("Detection System ");
+          delay(3000);
+          }
+          void loop()
+          {
+          if(digitalRead(Alcohol)==HIGH)
+          {
+          digitalWrite(10,HIGH);
+          // delay(200);
+          lcd.clear();
+          lcd.print(" ENGINE");
+          lcd.setCursor(0, 1);
+          lcd.print(" ON ");
+          delay(300);
+          }
+          else
+          {
+          digitalWrite(10, LOW); 
+          //digitalWrite(fire, LOW); 
+          lcd.clear(); 
+          lcd.print(" ENGINE "); 
+          lcd.setCursor(0,1); 
+          lcd.print(" OFF ");
+          delay(200);
+          }
+          }
+            </code></pre>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-gray-600 body-font  mt-10 bg-purple-200">
+    <div class="container px-5 py-4 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center">
+        <img src="assets/TS Roboding (13).png" class="w-8 h-8" alt="">
+        <span class="ml-3 text-xl">Ts Roboding</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+        2023 Ts Roboding —
+        <a href="https://twitter.com/Tejas239" class="text-gray-600 ml-1" rel="noopener noreferrer"
+          target="_blank">@Tejas</a>
+      </p>
+      <span class="inline-flex md:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a target="_blank" href="https://twitter.com/Tejas239" class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/tejas_2_3_/?hl=en" class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/tejas-s-962a00292/" class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+            </path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    const copyButton = document.getElementById('copyButton');
+    const codeBlock = document.querySelector('code');
+    const copyNotification = document.getElementById('copyNotification');
+
+    copyButton.addEventListener('click', () => {
+      const textArea = document.createElement('textarea');
+      textArea.value = codeBlock.innerText;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+
+      // Show the notification
+      copyNotification.classList.remove('hidden');
+      setTimeout(() => {
+        copyNotification.classList.add('hidden');
+      }, 2000); // Hide the notification after 2000 milliseconds (2 seconds)
+    });
+  </script>
+
+</body>
+
+</html>
