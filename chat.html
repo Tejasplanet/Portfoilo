@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .fullscreen {
+            position: fixed;
+            padding: 10%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fullscreen img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white p-4 md:p-6 rounded">
+    <header class="bg-gray-700 text-white py-4 px-6 flex items-center justify-between rounded">
+        <div class="flex items-center space-x-2">
+            <img src="assets/TS Roboding (13).png" alt="Logo" class="w-8 h-8">
+            <h1 class="text-lg font-bold">TS Roboding</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="hover:text-gray-300 transition bg-black py-2 px-3 duration-300 px-3 rounded">Home</a>
+            <!-- Add more navigation links as needed -->
+        </nav>
+    </header>
+
+    <div class="container mx-auto">
+        <h1 class="text-3xl font-bold mb-6 mt-4 text-center">Chitchat App</h1>
+        <div id="imageContainer" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <!-- Images will be dynamically added here -->
+        </div>
+
+        <p class="text-primary mb-8 font-medium text-justify">Introducing Chitchat App, where connecting with loved ones is easier than ever! Simply sign up using your Google account and begin chatting with friends, family, and others instantly. Our user-friendly interface allows for seamless communication, and you can even share images downloaded from our accompanying app. Whether you're catching up with an old friend or sharing precious moments with family, our platform provides a convenient and enjoyable experience for all.</p>
+        <p class="text-lg mb-4 text-center text-justify">Download the app now and experience seamless communication like never before!</p>
+        <div class="flex justify-center">
+            <a href="your_app.apk" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded inline-block">
+                Download APK
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const imageContainer = document.getElementById("imageContainer");
+            const images = [
+                "https://source.unsplash.com/random/200x300",
+                "https://source.unsplash.com/random/200x300",
+                "https://source.unsplash.com/random/200x300",
+                "https://source.unsplash.com/random/200x300",
+                "https://source.unsplash.com/random/200x300",
+                "https://source.unsplash.com/random/200x300"
+            ];
+
+            images.forEach(src => {
+                const imgDiv = document.createElement("div");
+                imgDiv.className = "bg-white shadow-md rounded-lg overflow-hidden";
+                const img = document.createElement("img");
+                img.src = src;
+                img.alt = "Image";
+                img.className = "w-full h-auto image-expand cursor-pointer";
+                img.addEventListener("click", function() {
+                    img.classList.toggle("fullscreen");
+                });
+                imgDiv.appendChild(img);
+                imageContainer.appendChild(imgDiv);
+            });
+        });
+    </script>
+</body>
+
+</html>
