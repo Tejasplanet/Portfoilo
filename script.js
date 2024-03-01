@@ -10,7 +10,7 @@ const myProjects = [
         category: 'App development',
         title: 'Chat App',
         description: "A chatting app where you can create your account using a Google account and start chatting with your friends, family, and others.",
-        image: 'chat.png',
+        image: 'https://source.unsplash.com/random/200x300',
         link: 'chat.html'
     },
     // Add more projects as needed
@@ -93,7 +93,7 @@ updateLoadMoreButtonText();
 
 const workData = [
     {
-        imageSrc: "ro.JPG",
+        imageSrc: "ro.jpg",
         title: "Vehicle-based Safety System",
         description:
             "If someone is drunk and tries to start a car, an ignition interlock system stops the car from working. It makes the driver take a breath test, and if the alcohol level is too high, the car won't start. This helps keep the roads safer by preventing drunk driving.",
