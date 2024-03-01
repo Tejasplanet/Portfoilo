@@ -3,8 +3,15 @@ const myProjects = [
         category: 'Robotics Engineer',
         title: 'Vehicle-based Safety System',
         description: "Ignition interlock: tests breath for alcohol; prevents car start if levels unsafe, promoting road safety.",
-        image: 'ro.JPG',
+        image: 'assets/ro.JPG',
         link: 'pro.html'
+    },
+    {
+        category: 'App development',
+        title: 'Chat App',
+        description: "A chatting app where you can create your account using a Google account and start chatting with your friends, family, and others.",
+        image: 'https://source.unsplash.com/random/200x300',
+        link: 'chat.html'
     },
     // Add more projects as needed
 ];
@@ -86,24 +93,23 @@ updateLoadMoreButtonText();
 
 const workData = [
     {
-        imageSrc: "ro.JPG",
+        imageSrc: "assets/ro.jpg",
         title: "Vehicle-based Safety System",
         description:
             "If someone is drunk and tries to start a car, an ignition interlock system stops the car from working. It makes the driver take a breath test, and if the alcohol level is too high, the car won't start. This helps keep the roads safer by preventing drunk driving.",
         link: "pro.html",
     },
     {
-        imageSrc: "work 1.jpg",
-        title: "Text to Speech",
-        description:
-            "In this website it's converts text into speech",
-        link: "#",
+        imageSrc: "https://source.unsplash.com/random/200x300",
+        title: "Chitchat App",
+        description: "A chatting app where you can create your account using a Google account and start chatting with your friends, family, and others.",
+        link: "chat.html",
     },
     {
-        imageSrc: "work 2.jpg",
-        title: "Music app",
+        imageSrc: "assets/SlideX.png",
+        title: "Slidex",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloribus, sint ex eum illum alias! Quod dicta voluptatem beatae excepturi tempore sint eaque consequatur quaerat ea! Explicabo dolorem voluptatibus itaque.",
+            "SlideX is a user-friendly online presentation tool, similar to PowerPoint but simpler to use. It offers straightforward features for creating engaging slideshows without unnecessary complexity. Ideal for both personal and professional use, SlideX helps users craft polished presentations with ease.",
         link: "#",
     },
 ];
