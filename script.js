@@ -93,7 +93,7 @@ updateLoadMoreButtonText();
 
 const workData = [
     {
-        imageSrc: "ro.jpg",
+        imageSrc: "ro.JPG",
         title: "Vehicle-based Safety System",
         description:
             "If someone is drunk and tries to start a car, an ignition interlock system stops the car from working. It makes the driver take a breath test, and if the alcohol level is too high, the car won't start. This helps keep the roads safer by preventing drunk driving.",
