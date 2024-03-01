@@ -10,7 +10,7 @@ const myProjects = [
         category: 'App development',
         title: 'Chat App',
         description: "A chatting app where you can create your account using a Google account and start chatting with your friends, family, and others.",
-        image: 'https://source.unsplash.com/random/200x300',
+        image: 'chat.png',
         link: 'chat.html'
     },
     // Add more projects as needed
