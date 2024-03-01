@@ -3,7 +3,7 @@ const myProjects = [
         category: 'Robotics Engineer',
         title: 'Vehicle-based Safety System',
         description: "Ignition interlock: tests breath for alcohol; prevents car start if levels unsafe, promoting road safety.",
-        image: 'assets/ro.JPG',
+        image: 'ro.JPG',
         link: 'pro.html'
     },
     {
@@ -93,20 +93,20 @@ updateLoadMoreButtonText();
 
 const workData = [
     {
-        imageSrc: "assets/ro.jpg",
+        imageSrc: "ro.jpg",
         title: "Vehicle-based Safety System",
         description:
             "If someone is drunk and tries to start a car, an ignition interlock system stops the car from working. It makes the driver take a breath test, and if the alcohol level is too high, the car won't start. This helps keep the roads safer by preventing drunk driving.",
         link: "pro.html",
     },
     {
-        imageSrc: "https://source.unsplash.com/random/200x300",
+        imageSrc: "chat.png",
         title: "Chitchat App",
         description: "A chatting app where you can create your account using a Google account and start chatting with your friends, family, and others.",
         link: "chat.html",
     },
     {
-        imageSrc: "assets/SlideX.png",
+        imageSrc: "SlideX.png",
         title: "Slidex",
         description:
             "SlideX is a user-friendly online presentation tool, similar to PowerPoint but simpler to use. It offers straightforward features for creating engaging slideshows without unnecessary complexity. Ideal for both personal and professional use, SlideX helps users craft polished presentations with ease.",
